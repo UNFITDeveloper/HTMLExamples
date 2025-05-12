@@ -1,0 +1,121 @@
+<!-- Simple demonstration of basic HTML Tags -->
+<html>
+<head>
+    <!-- What can this include -->
+	<title> Page to style</title>
+		<!-- gIVE THIS PAGE A FAVICON -->
+
+		<style>
+			h1{
+				color:red;
+				text-align:center;
+				background-color: aqua;
+				/*
+				font-family:cursive;
+				font-size: 100px;
+				*/
+			 
+			}
+			h1:hover {
+				color:rgba(255, 251, 0, 0.891);
+				text-align:center;
+				background-color: aqua;
+				/*
+				font-family:cursive;
+				font-size: 100px;
+				*/
+			 
+			}
+			
+			.ukraine
+			{
+				background-color:blue ;
+				color: yellow;
+			}
+
+			.ireland
+			{
+				
+				background-color: green;
+				color: white;
+			}
+			
+
+
+			
+
+			
+
+		</style>
+</head>
+
+
+<body class = "ukraine">  <!-- What can be change about the body of our documentation-->
+
+   <h1> Wednesday Demo </h1>
+   <p>This is a simple page. It shows some features of html like Tables, Links and images. What happens? </p>
+	 <h1 style = "color: blueviolet;"> This is a second header </h1>
+
+   
+    <Table class = "ireland" border="5">
+    	<tr><th colspan="2"> Sports </th> </tr>
+      
+			<tr>
+				<td> Rugby </td> 
+				<td> 
+					<a href="sport1.png" target = "display"> 
+						<img src="Sport1.png" alt="Rugby" width = "60">
+					</a>
+				</td> 
+			</tr>
+
+      <tr>
+      	<td> 
+        	<a href = "https://gaa.ie"> Hurling </a> 
+        </td>
+        <td>
+					<a href="Sport2.png" target="display">
+						<img src="Sport2.png" alt="Hurling" width = "60">
+					</a>
+				</td> 
+			</tr>
+
+      <tr>
+				<td> Gaelic Football</td>
+				<td>
+					<a href="Sport3.png" target="display">
+						<img src="Sport3.png" alt="Gaelic Football" width = "60">
+					</a>
+				</td> 
+			</tr>
+
+        <tr>
+					<td> Soccer</td> 
+					<td> 
+						<a href="sport4.png" target="display">
+							<img src="Sport4.png" alt="Soccer" width = "60">
+						</a>
+					</td>
+				</tr>
+    </Table>
+
+<img src="Sport2.png" alt="Hurling" width = "60">
+<p> Learn more about hurling <a href = "Sport4.png" target="_blank">here</a> </p>
+
+
+<!-- https://www.youtube.com/watch?v=Igt8IfTPIPM -->
+<iframe
+	name = "display"
+	src="Sport2.png"
+	width="1400"
+	height = "1400"
+	>
+</iframe>
+
+</body>
+
+
+
+
+</html>
+ 

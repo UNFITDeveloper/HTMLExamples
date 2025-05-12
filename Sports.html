@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>2×2 Thumbnail Gallery with iFrame</title>
+</head>
+<body>
+
+  <!-- 2×2 thumbnail grid -->
+  <table border="0" cellpadding="5">
+    <tr>
+      <td>
+        <a href="images\Sport1.png" target="display">
+          <img src="images\Sport1.png"
+               alt="Rugby Icon" width="120" height="auto">
+        </a>
+      </td>
+      <td>
+        <a href="images\Sport2.png" target="display">
+          <img src="images\Sport2.png"
+               alt="Hurling Icon" width="120" height="auto">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="images\Sport3.png" target="display">
+          <img src="images\Sport3.png"
+               alt="Gaelic Football Icon" width="120" height="auto">
+        </a>
+      </td>
+      <td>
+        <a href="images\Sport4.png" target="display">
+          <img src="images\Sport4.png"
+               alt="Soccer Icon" width="120" height="auto">
+        </a>
+      </td>
+    </tr>
+  </table>
+
+  <!-- display window -->
+  <iframe name="display"
+          src="images\Sport1.png"
+          width="1400"
+          height="1400"
+          frameborder="0">
+    Your browser doesn’t support iframes.
+  </iframe>
+
+</body>
+</html>

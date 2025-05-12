@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Application Form</title>
+
+    <!-- Simple, beginner‑friendly CSS (no external files) -->
+    <style>
+       
+    </style>
+    
+    <link rel="stylesheet" href="css\chatGPT.css">
+    
+</head>
+<body>
+
+    <h1>Please complete this form</h1>
+
+    <form action="https://httpbin.org/post" method="post" target="_blank">
+        <label>
+            Enter your name:
+            <input type="text" name="applicantName" required>
+        </label>
+
+        <label>
+            Email address:
+            <input type="text" name="applicantEmail" required>
+        </label>
+
+        <label>
+            Select course:
+            <select name="selectedCourse" required>
+                <option value="">Select a course</option>
+                <option value="Eng101">Engineering</option>
+                <option value="Law101">Law</option>
+                <option value="His101">History</option>
+            </select>
+        </label>
+
+        <fieldset class="radio-group">
+            <legend>Select your preferred level of study</legend>
+            <label><input type="radio" name="courseLevel" value="L1" required> Level&nbsp;1</label>
+            <label><input type="radio" name="courseLevel" value="L2"> Level&nbsp;2</label>
+            <label><input type="radio" name="courseLevel" value="L3"> Level&nbsp;3</label>
+        </fieldset>
+
+        <button type="submit">Apply Now</button>
+    </form>
+
+</body>
+</html>

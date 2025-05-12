@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Car Animation</title>
+  <style>
+    #road {
+      position: relative;
+      width: 100%;
+      height: 100px;
+      background-color: #eee;
+      border: 1px solid #ccc;
+      overflow: hidden;
+    }
+
+    #car {
+      position: absolute;
+      left: 0;
+      top: 20px;
+      height: 60px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Moving Car</h2>
+  <div id="road">
+    <img id="car" src="car.png" alt="Car"> <!-- Replace 'car.png' with your image -->
+  </div>
+
+  <script>
+    class Car {
+      constructor(elementId) {
+        this.carElement = document.getElementById(elementId);
+        this.position = 0;
+        this.timer = null;
+        this.maxRight = document.getElementById('road').offsetWidth;
+      }
+
+      move() {
+        const randomStep = Math.floor(Math.random() * 10) + 1; // 1 to 10 pixels
+        this.position += randomStep;
+        this.carElement.style.left = this.position + 'px';
+
+        if (this.position + this.carElement.offsetWidth >= this.maxRight) {
+          clearInterval(this.timer);
+          console.log('Car has reached the end!');
+        }
+      }
+
+      start() {
+        this.timer = setInterval(() => this.move(), 100);
+      }
+    }
+
+    const myCar = new Car('car');
+    myCar.start();
+  </script>
+</body>
+</html>

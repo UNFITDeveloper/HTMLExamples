@@ -1,0 +1,80 @@
+/* Basic page setup */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Heading */
+h1 {
+    margin: 40px 0 10px;
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+/* Form container */
+form {
+    background: #4cd6f5;
+    max-width: 420px;
+    width: 90%;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 16px;
+    font-size: 0.95rem;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box; /* keeps padding inside width */
+}
+
+/* Radio button group */
+fieldset {
+    border: none; /* remove default border */
+    padding: 0;
+    margin: 12px 0 20px;
+}
+
+fieldset legend {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.radio-group label {
+    display: block;
+    margin: 6px 0;
+}
+
+/* Submit button */
+button {
+    width: 100%;
+    padding: 12px 0;
+    background: #00ff2f;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #005dd8; /* darker on hover */
+}

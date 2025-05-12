@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Car Race</title>
+  <style>
+    #road {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      background: #ccc;
+      border: 2px solid #000;
+      overflow: hidden;
+      margin-top: 20px;
+    }
+
+    .car {
+      position: absolute;
+      left: 0;
+      font-size: 2rem;
+      transition: left 3s linear;
+    }
+
+    .car1 { top: 20px; }
+    .car2 { top: 80px; }
+    .car3 { top: 140px; }
+
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Car Race!</h1>
+  <button onclick="startRace()">Start Race</button>
+
+  <div id="road">
+    <div class="car car1">🚗</div>
+    <div class="car car2">🚙</div>
+    <div class="car car3">🏎️</div>
+  </div>
+
+  <script>
+    function startRace() {
+      const finishLine = window.innerWidth - 100;
+
+      document.querySelector('.car1').style.left = (finishLine - Math.random() * 100) + 'px';
+      document.querySelector('.car2').style.left = (finishLine - Math.random() * 100) + 'px';
+      document.querySelector('.car3').style.left = (finishLine - Math.random() * 100) + 'px';
+    }
+  </script>
+
+</body>
+</html>

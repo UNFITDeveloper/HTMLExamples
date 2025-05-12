@@ -1,0 +1,62 @@
+<!-- Work on Forms -->
+ <html>
+    <head>
+        <title> This will be examples based on form tag</title>
+        <!-- put in an icon -->
+         <style>
+            
+
+         </style>
+    </head>
+    
+
+
+    <body >
+      <h1 > Please complete this form</h1>
+			<form action="https://httpbin.org/post" method="post" target="_blank">
+				<label >
+					Enter your name:
+					<input type="text" name="applicantName">
+				</label>
+				<br>
+				<label >
+					email address:
+					<input type="text" name="applicantEmail" >
+				</label>
+				<br>
+				<label >
+					Select course:
+					<select name="selectedCourse">
+						<option value = "NONE"> Select a course</option>
+						<option value = "Eng101"> Engineering </option>
+						<option value = "Law101"> Law </option>
+						<option value = His101> History </option>
+					</select>
+				</label>
+				<BR>
+				<BR>
+				<legend> Select your preferred level of study</legend>
+				<div>
+					<label>
+						<input type="radio" name = "courseLevel" value ="L1">
+						Course Level1
+					</label>
+					<label>
+						<input type="radio" name = "courseLevel" value ="L2">
+						Course Level2
+					</label>
+					<label>
+						<input type="radio" name = "courseLevel" value = "L3">
+						Course Level3
+					</label>
+					
+			</div>
+
+			<button type="submit">
+				Apply Now
+			</button>
+
+			</form>
+
+    </body>
+ </html>
